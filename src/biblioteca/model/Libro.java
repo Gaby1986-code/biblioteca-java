@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package biblioteca;
+package biblioteca.model;
 
 /**
  *Programa para gestionar una biblioteca.
@@ -10,11 +10,11 @@ package biblioteca;
  */
 public class Libro {
     
-    String titulo;
-    String autor;
-    boolean prestado;
+   private String titulo;
+   private String autor;
+   private boolean prestado;
     
-    Libro (String titulo, String autor){
+   public Libro (String titulo, String autor){
         this.titulo = titulo;
         this.autor = autor;
         this.prestado = false;
@@ -25,8 +25,15 @@ public class Libro {
      
     }
    
-      boolean estaPrestado(){
+     public boolean estaPrestado(){
           return this.prestado;
           
+      }
+      public String getTitulo(){
+       return titulo;
+      }
+
+      public String getAutor(){
+       return autor;
       }
 }

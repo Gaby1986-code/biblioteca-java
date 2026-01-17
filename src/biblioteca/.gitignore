@@ -1,5 +1,10 @@
+#IntelliJ
 .idea/
-out/
-*.class
+*.iml
+#NetBeans
 nbproject/
 build/
+dist/
+#Compiled files
+*.class
+out/
